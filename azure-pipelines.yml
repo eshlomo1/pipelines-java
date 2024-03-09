@@ -20,7 +20,8 @@ steps:
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
 
-- task: AdvancedSecurity-Dependency-Scanning@1
+- task: AdvancedSecurity-Codeql-Autobuild@1
+  displayName: AutoBuild
 
 - task: AdvancedSecurity-Codeql-Analyze@1
   displayName: Perform CodeQL Analysis
