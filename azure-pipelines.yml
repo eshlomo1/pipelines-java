@@ -22,3 +22,6 @@ steps:
     goals: 'package'
 
 - task: AdvancedSecurity-Dependency-Scanning@1
+
+- task: AdvancedSecurity-Codeql-Analyze@1
+  displayName: Perform CodeQL Analysis
