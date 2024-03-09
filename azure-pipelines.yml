@@ -21,6 +21,4 @@ steps:
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
 
-- task: AdvancedSecurity-Codeql-Init@1
-
 - task: AdvancedSecurity-Dependency-Scanning@1
